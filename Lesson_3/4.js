@@ -1,4 +1,5 @@
 'use strict'
+
 const products = [
   {
     id: 3,

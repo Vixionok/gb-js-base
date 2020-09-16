@@ -42,5 +42,4 @@ function getPreLastDigit(num){
 }
 
 let money = parseInt(prompt("Какую сумму вы хотите положить на счет "));
-
 alert("Ваша сумма " + money + getRublesCase(money) + " успешно зачислена на счет.");

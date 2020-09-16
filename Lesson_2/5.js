@@ -56,4 +56,5 @@ function mathOperation(arg1, arg2, operation){
       console.log('Введены некорректные значения ')
   }
 }
+
 console.log(mathOperation(7, 8, "-"));
