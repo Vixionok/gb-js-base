@@ -6,6 +6,9 @@ function getDigitOfNum (num){
   }
   return{
     units: num % 10,
+    decades: Math.floor(num/10)%10,
+    hundreds: Math.floor(num/100)
 
   }
 }
+console.log(getDigitOfNum (321));
