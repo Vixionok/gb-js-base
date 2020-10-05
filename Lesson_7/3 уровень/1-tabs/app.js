@@ -1,8 +1,10 @@
-'use strict';
+"use strict";
 const texts = {
-    text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    text2: 'Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.',
-    text3: 'Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил.'
+  text1: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+  text2:
+    "Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.",
+  text3:
+    "Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил.",
 };
 
 /* 
@@ -11,33 +13,32 @@ const texts = {
     2.1 Переберите полученную коллекцию, например с помощью forEach, и каждой ссылке назначьте
     обработчик клика функцию clickHandler.
 */
-
+let textEl = document.queryCommandEnabled(".text");
+let aEl = document.querySelectorAll(".nav-link");
+aEl.forEach(function (aLink) {
+  aLink.addEventListener("click", clickHandler);
+});
 
 /**
  * Обработчик клика по .nav-link
- * @param {MouseEvent} event 
+ * @param {MouseEvent} event
  */
 function clickHandler(event) {
-    // здесь вызывайте changeText и changeActiveClass, и передавайте
-    // им объект события.
-   
+  // здесь вызывайте changeText и changeActiveClass, и передавайте
+  // им объект события.
 }
 
 /**
  * Эта функция должна убирать .active у предыдущего .nav-link и ставить его
  * на тот, по которому кликнули.
- * @param {MouseEvent} event 
+ * @param {MouseEvent} event
  */
-function changeActiveClass(event) {
-    
-}
+function changeActiveClass(event) {}
 
 /**
- * Эта фукнция должна читать текст (например через textContent) из 
+ * Эта фукнция должна читать текст (например через textContent) из
  * .nav-link по которому кликнули и в зависимости от этого в .text
  * ставить соответствующий текст из texts.
- * @param {MouseEvent} event 
+ * @param {MouseEvent} event
  */
-function changeText(event) {
-    
-}
+function changeText(event) {}
